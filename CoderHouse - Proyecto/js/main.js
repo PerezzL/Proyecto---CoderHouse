@@ -52,7 +52,7 @@ const adivinarElNumero = (min, max, numIntentos) => {
 //Iniciar el juego
 const cargarJuego = () => {
     let nombreJugador = prompt('Cual es tu nombre?');
-    let dificultad = prompt('Bienvenid@ ' + nombreJugador + ' a Adivinar el numero \nPara Nivel Facil escribir: 1 \nPara Nivel Intermedio escribir: 2 \nPara Nivel Dificil escribir: 3');
+    let dificultad = prompt('Bienvenid@ ' + nombreJugador + ' a Adivinar el numero \nPara Nivel Facil escribir: 1 \nPara Nivel Intermedio escribir: 2 \nPara Nivel Dificil escribir: 3 \nPara Nivel Imposible escribir: 4');
 
     switch(dificultad){
         case '1':
@@ -66,6 +66,10 @@ const cargarJuego = () => {
         case '3':
             adivinarElNumero(1, 30, 3);
             console.log('Nivel Dificil');
+            break;
+        case '4':
+            adivinarElNumero(1, 100, 1);
+            console.log('Nivel Imposible');
             break;
         default:
             alert('Ingresar opcion válida');
