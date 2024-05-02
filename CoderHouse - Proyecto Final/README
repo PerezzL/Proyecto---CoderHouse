@@ -1,0 +1,30 @@
+ADIVINA EL NÚMERO
+Adivina el Número es un juego simple donde los jugadores intentan adivinar un número generado aleatoriamente dentro de un rango especificado.
+
+FUNCIONABILIDADES PRINCIPALES
+-Juego de adivinanza: El juego consiste en adivinar un número generado aleatoriamente dentro de un rango especificado.
+-Selección de Dificultad y puntuación: Los jugadores pueden elegir entre difernetes tipos de dificultad, en el cual, cada uno tiene su puntación.
+-ScoreBoard: Un scoreboard que muestra el puntaje de los jugadores, dentro de esta se pueden guardar cambiar los nombres y borrar toda la lista.
+-Nombre aleatorio: Se puede poner un nombre aleatorio proveniente de un array.
+
+FRAMEWORKS USADOS 
+-SweetAlert2: Para alertas de ganar o perder.
+-Toast: Para notificaciones de agregar nombre o poner un numero en el rango especificado.
+
+ESTRUCTURA DEL PROYECTO
+-index.html: Es el archivo principal de la página web.
+-puntos.html: Ese el archivo para mostrar los puntos de los usuarios.
+-style.css: Es el archivo de estilos de la página web.
+-main.js: Lógica principal del juego.
+-puntos.js: Lógica para mostrar los puntos de los usuarios.
+-SweetAlert.js: Lógica par las alertas
+-Toastify.js: Logica para las notificaciones
+
+COMO JUGAR
+1. Ingresar un nombre o seleccionar uno aleatorio.
+2. Seleccionar la dificultad del juego.
+3. Hacer click en 'Comenzar'.
+4. Ingresar un numero y hacer click en 'Adivinar'.
+5. si adivinas el numero, recibis los puntos y se registrara en el ScoreBoard.
+6. Se puede ver la puntuacion haciendo click en el boton de 'Ver ScoreBoard'.
+

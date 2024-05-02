@@ -1,0 +1,198 @@
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    background-image: url(../imagenes/Nubes-LosSimpsons.webp);
+}
+
+#contenedor {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    max-width: 60%;
+    max-height: 80%;
+    height: auto;
+    background-color: #ffffff;
+    text-align: center;
+    border: 10px solid yellow;
+    border-radius: 25px;
+    box-shadow: 0 0 27px black;
+    align-content: center;
+}
+
+h1 {
+    margin: 10px;
+    color: black;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2.5em;
+    font-weight: 700;
+}
+
+label, input, select, button {
+    margin: 10px 0;
+    display: block;
+    color: black;
+    border-color: black;
+    font-size: 20px;
+}
+
+.grupoInput{
+    display: flex;
+    align-items: center;
+}
+
+.grupoInput input {
+    flex: 1;
+}
+
+.grupoInput button {
+    width: 15%;
+    height: 80%;
+    margin-left: 1%;
+}
+
+.BotonScoreBoard {
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+.BotonScoreBoard a {
+    color: #ffffff;
+    font: bold;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+button {
+    margin: 15px;
+    display: block;
+    width: 90%;
+    padding: 15px;
+    box-sizing: border-box;
+    border-radius: 20px;
+}
+
+button {
+    background-color: #58a8fd;
+    color: #ffffff;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 20px;
+    font: bold;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.boton-restart {
+    background-color: #58a8fd;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.boton-restart:hover {
+    background-color: #0056b3;
+}
+
+p {
+    margin: 20px;
+    color: black;
+    font-size: 20px;
+}
+
+.divBotones{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    max-width: 97%;
+}
+
+.divBotonesScore{
+    flex-direction: row;
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    max-width: 97%;
+}
+
+.BacktoMain{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    color: #ffffff;
+}
+
+.BacktoMain a{
+    color: #ffffff;
+    font: bold;
+}
+
+.buttonDelete{
+    background-color: red;
+}
+
+.buttonDelete:hover{
+    background-color: #a70000;
+}
+
+.toastBox{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    overflow: hidden;
+    padding: 20px;
+}
+
+.toast{
+    width: 400px;
+    height: 80px;
+    background: #ffffff;
+    font-weight: 500;
+    margin: 15PX O;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.toast i{
+    margin: 0 20px;
+    font-size: 35px;
+    color: orange;
+
+}
+
+.toast ::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 5px;
+    background: orange;
+    animation: anim 5s linear forwards;
+}
+
+@keyframes anim{
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 100%;
+    }
+}

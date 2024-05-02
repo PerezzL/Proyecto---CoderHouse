@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el Número</title>
+    <script defer src="./js/main.js"></script>
+    <script defer src="./js/SweetAlert.js"></script>
+    <script defer src="./js/toastify.js"></script>
+    <link rel="stylesheet" href="./css/style.css">
+    <script defer src="https://kit.fontawesome.com/bacf30def7.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="contenedor">
+        <h1>Adivina el Número</h1>
+        <div class="contenedor-juego">
+            <label class="label-input">Ingrese su nombre:</label>
+            <div class="grupoInput">
+                <input type="text">
+                <button class="iconoAleatorio"><i class="fa-solid fa-shuffle"></i></button>
+            </div>
+            <label class="label-select">seleccione la dificultad:</label>
+            <select class="SelectorDificultad">
+                <option value = '1'>Fácil (10 puntos)</option>
+                <option value = '2'>Intermedio (25 puntos)</option>
+                <option value = '3'>Difícil (50 puntos)</option>
+                <option value = '4'>Imposible (150 puntos)</option>
+            </select>
+            <button class="botonComenzar">
+                Comenzar
+            </button>
+            <button class="BotonScoreBoard">
+            <a href="./puntos.html">
+                Ver el ScoreBoard
+            </a>
+            </button>
+        </div>
+    </div>
+    <div class="toastBox"></div>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
